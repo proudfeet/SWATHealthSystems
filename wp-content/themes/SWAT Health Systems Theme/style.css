@@ -227,6 +227,9 @@ input:focus {
 a {
   transition: all 0.2s; }
 
+.center {
+  text-align: center; }
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -263,15 +266,80 @@ a {
 
 /* sidebar */
 /* footer */
+.footer {
+  background: #000; }
+  .footer .copyright {
+    margin: 0;
+    color: #8a8a88;
+    padding: 15px 0;
+    font-size: 12px; }
+  .footer a {
+    color: #cda633; }
+    .footer a:hover, .footer a:focus {
+      color: #fff; }
+  .footer .social__container {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: right; }
+  .footer .social__item {
+    display: inline-block;
+    text-align: center; }
+  .footer .social__link {
+    display: inline-block;
+    font-size: 20px;
+    color: #8a8a88;
+    padding: 10px; }
+    .footer .social__link:hover, .footer .social__link:focus {
+      color: #fff; }
+
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
 .homepage-hero {
-  padding-top: 40%; }
+  color: white; }
+  .homepage-hero .hero__message {
+    text-shadow: 1px 1px 15px black; }
+  .homepage-hero h1.hero__message {
+    padding-bottom: 30px; }
+  .homepage-hero h4.hero__message {
+    padding-bottom: 20px;
+    font-weight: lighter; }
 
 .homepage-hero__top-banner {
   background: url("./img/SWATgymInside.jpg");
   background-size: cover; }
+  .homepage-hero__top-banner .example__container {
+    padding-top: 150px; }
+  .homepage-hero__top-banner .get-started__container {
+    padding-top: 150px; }
+
+.button {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  font-size: 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold; }
+  .button.button-yellow {
+    background: #cda633; }
+
+.homepage-hero__bottom-banner {
+  background: url("./img/SWATgymWeights.jpg");
+  background-size: cover;
+  padding: 200px; }
+
+.home .article__content {
+  padding: 100px 0; }
+  .home .article__content a {
+    color: #cda633; }
+  .home .article__content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 20px; }
 
 /*------------------------------------*\
     IMAGES

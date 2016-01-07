@@ -7,8 +7,16 @@
 
 			<!-- homepage top banner -->
 			<div class="homepage-hero homepage-hero__top-banner">
-				<div class="wrapper hero-content__container">
-					
+				<div class="wrapper hero-content clear">
+					<div class="columns desk-six get-started__container">
+						<h1 class="hero__message">Personalized training for you, wherever</h1>
+						<a href="http://swathealth.trainerize.com/contact.aspx?ref=newuser" class="hero__button button button-yellow">
+							Get started
+						</a>
+					</div>	
+					<div class="columns desk-six example__container">
+						<img src="<?php echo bloginfo('template_directory'); ?>/img/trainerizeExample.png" alt="How Trainerize works">
+					</div>				
 				</div>
 			</div>
 			<!-- /homepage top banner -->
@@ -18,13 +26,13 @@
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<?php the_content(); ?>
+					<div class="wrapper article__content">
+						<?php the_content(); ?>
 
-					<?php comments_template( '', true ); // Remove if you don't want comments ?>
+						<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-					<br class="clear">
-
-					<?php edit_post_link(); ?>
+						<br class="clear">
+					</div>
 
 				</article>
 				<!-- /article -->
@@ -42,6 +50,13 @@
 				<!-- /article -->
 
 			<?php endif; ?>
+
+			<div class="homepage-hero homepage-hero__bottom-banner">
+				<div class="wrapper hero-content clear center">
+					<h1 class="hero__message center">What are you waiting for?</h1>
+					<a class="button button-yellow button-center" href="http://swathealth.trainerize.com/contact.aspx?ref=newuser">Get started today</a>
+				</div>
+			</div>
 			
 		</main>
 
@@ -50,7 +65,7 @@
 
 		<main role="main">
 			<!-- section -->
-			<section class="wrapper">
+			<section class="wrapper clear">
 
 				<h1><?php the_title(); ?></h1>
 
@@ -65,7 +80,7 @@
 
 					<br class="clear">
 
-					<?php edit_post_link(); ?>
+					<?php // edit_post_link(); ?>
 
 				</article>
 				<!-- /article -->

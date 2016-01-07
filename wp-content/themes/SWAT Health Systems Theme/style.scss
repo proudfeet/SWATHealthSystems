@@ -112,6 +112,10 @@ a {
 	transition: all 0.2s;
 }
 
+.center {
+	text-align: center;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -169,9 +173,50 @@ a {
 .sidebar {
 
 }
+
 /* footer */
 .footer {
+	background: $black;
 
+	.copyright {
+		margin: 0;
+		color: $grey;
+		padding: 15px 0;
+		font-size: 12px;
+	}
+
+	a {
+		color: $yellow;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
+
+	.social__container {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		text-align: right;
+	}
+
+		.social__item {
+			display: inline-block;
+			text-align: center;
+		}
+	
+			.social__link {
+				display: inline-block;
+				font-size: 20px;
+				color: $grey;
+				padding: 10px;
+
+				&:hover,
+				&:focus {
+					color: $white;
+				}
+			}
 }
 
 /*------------------------------------*\
@@ -183,13 +228,72 @@ a {
 	// ------------------------------------- *
 
 	.homepage-hero {
-		padding-top: 40%;
+		color: white;
+
+		.hero__message {
+			text-shadow: 1px 1px 15px black;
+		}
+
+		h1.hero__message {
+			padding-bottom: 30px;
+		}
+
+		h4.hero__message {
+			padding-bottom: 20px;
+			font-weight: lighter;
+		}
 	}
 
 	.homepage-hero__top-banner {
 		background: url('./img/SWATgymInside.jpg');
 		background-size: cover;
+
+		.example__container {
+			padding-top: 150px;
+		}
+
+		.get-started__container {
+			padding-top: 150px;
+		}
+	}
+
+	.button {
+		display: inline-block;
+		padding: 15px 20px;
+		color: white;
+		font-size: 12px;
+		border-radius: 2px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-weight: bold;
+
+		&.button-yellow {
+			background: $yellow;
+		}
+	}
+
+	.homepage-hero__bottom-banner {
+		background: url('./img/SWATgymWeights.jpg');
+		background-size: cover;
+		padding: 200px;
+	}
+
+	.home {
 		
+		.article__content {
+			padding: 100px 0;
+
+			a {
+				color: $yellow;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 1.5;
+				margin: 0;
+				padding-bottom: 20px;
+			}
+		}
 	}
 
 

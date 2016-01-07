@@ -1,15 +1,37 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer clear" role="contentinfo">
 
 				<!-- wrapper -->
 				<div class="wrapper">
 					
 					<!-- copyright -->
-					<p class="copyright">
-						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					<p class="copyright columns desk-eight">
+						&copy; <?php echo date('Y'); ?> Copyright <a href="http://www.swathealth.com"><?php bloginfo('name'); ?></a>
 					</p>
 					<!-- /copyright -->
+
+					<ul class="columns desk-four social__container">
+						<li class="social__item">
+							<a class="social__link" href="http://www.twitter.com/SWAThealth" title="SWAT Health on Twitter">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="http://www.facebook.com/SWAThealthPC" title="SWAT Health on Facebook">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="https://www.youtube.com/channel/UCjGQeDKQrXyPl2RTu_LOzCA" title="SWAT Health on YouTube">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="http://www.instagram.com/swathealth" title="SWAT Health on Instagram">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
 
 				</div>
 				<!-- /wrapper -->

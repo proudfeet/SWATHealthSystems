@@ -1,0 +1,187 @@
+$tablet: 767px;
+$mobile: 480px;
+
+.tablet-down {
+	display: none;
+}
+
+.mobile-down {
+	display: none;
+}
+
+.wrapper {
+	width: 99%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.columns {
+	float: left;
+	padding: 0 10px;
+	margin-right: 0;
+	margin-left: 0;
+
+	&.reset {
+		margin: 0;
+		padding: 0;
+	}
+
+	&.desk-one {
+		width: 8.333%;
+	}
+
+	&.desk-two {
+		width: 16.666%;
+	}
+
+	&.desk-three {
+		width: 25%;
+	}
+
+	&.desk-four {
+		width: 33.333%;
+	}
+
+	&.desk-five {
+		width: 41.666%;
+	}
+
+	&.desk-six {
+		width: 50%;
+	}
+
+	&.desk-seven {
+		width: 58.333%;
+	}
+
+	&.desk-eight {
+		width: 66.666%;
+	}
+
+	&.desk-nine {
+		width: 75%;
+	}
+
+	&.desk-ten {
+		width: 83.333%;
+	}
+
+	&.desk-eleven {
+		width: 91.666%;
+	}
+
+	&.desk-twelve {
+		width: 100%;
+	}
+
+	@media screen and (max-width: $tablet) {
+
+		&.tablet-down {
+			display: block;
+		}
+		
+		&.tablet-one {
+				width: 8.333%;
+		}
+
+		&.tablet-two {
+			width: 16.666%;
+		}
+
+		&.tablet-three {
+			width: 25%;
+		}
+
+		&.tablet-four {
+			width: 33.333%;
+		}
+
+		&.tablet-five {
+			width: 41.666%;
+		}
+
+		&.tablet-six {
+			width: 50%;
+		}
+
+		&.tablet-seven {
+			width: 58.333%;
+		}
+
+		&.tablet-eight {
+			width: 66.666%;
+		}
+
+		&.tablet-nine {
+			width: 75%;
+		}
+
+		&.tablet-ten {
+			width: 83.333%;
+		}
+
+		&.tablet-eleven {
+			width: 91.666%;
+		}
+
+		&.tablet-twelve {
+			width: 100%;
+		}
+	}
+
+
+	@media screen and (max-width: $mobile) {
+
+		&.mobile-down {
+			display: block;
+		}
+		
+		&.mobile-one {
+			width: 8.333%;
+		}
+
+		&.mobile-two {
+			width: 16.666%;
+		}
+
+		&.mobile-three {
+			width: 25%;
+		}
+
+		&.mobile-four {
+			width: 33.333%;
+		}
+
+		&.mobile-five {
+			width: 41.666%;
+		}
+
+		&.mobile-six {
+			width: 50%;
+		}
+
+		&.mobile-seven {
+			width: 58.333%;
+		}
+
+		&.mobile-eight {
+			width: 66.666%;
+		}
+
+		&.mobile-nine {
+			width: 75%;
+		}
+
+		&.mobile-ten {
+			width: 83.333%;
+		}
+
+		&.mobile-eleven {
+			width: 91.666%;
+		}
+
+		&.mobile-twelve {
+			width: 100%;
+		}
+	}
+}

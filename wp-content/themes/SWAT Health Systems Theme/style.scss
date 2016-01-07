@@ -77,52 +77,14 @@ input:focus {
 	border:1px solid #04A4CC;
 }
 
-/*------------------------------------*\
-    STRUCTURE
-\*------------------------------------*/
+// ----------------------------------- *
+// COLOURS
+// ----------------------------------- *
 
-/* wrapper */
-.wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
-}
-/* header */
-.header {
-
-}
-/* logo */
-.logo {
-
-}
-.logo-img {
-
-}
-/* nav */
-.nav {
-
-}
-/* sidebar */
-.sidebar {
-
-}
-/* footer */
-.footer {
-
-}
-
-/*------------------------------------*\
-    PAGES
-\*------------------------------------*/
-
-
-
-/*------------------------------------*\
-    IMAGES
-\*------------------------------------*/
-
-
+$white: #fff;
+$grey: #8a8a88;
+$black: #000;
+$yellow: #cda633;
 
 /*------------------------------------*\
 	TYPOGRAPHY
@@ -141,6 +103,101 @@ input:focus {
 
 $montserrat: "Montserrat", Helvetica, Arial, sans-serif;
 $openSans: "Open Sans", Helvetica, Arial, sans-serif;
+
+// ----------------------------------- *
+// UTILITY
+// ----------------------------------- *
+
+a {
+	transition: all 0.2s;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+	background: $black;
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		text-align: right;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+	}
+
+	a {
+		display: inline-block;
+		color: $white;
+		padding: 15px 10px;
+		font-family: $montserrat;
+		font-weight: bold;
+		font-size: 15px;
+
+		&:hover {
+			color: $yellow;
+		}
+	}
+
+}
+
+
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+	// HOMEPAGE
+	// ------------------------------------- *
+
+	.homepage-hero {
+		padding-top: 40%;
+	}
+
+	.homepage-hero__top-banner {
+		background: url('./img/SWATgymInside.jpg');
+		background-size: cover;
+		
+	}
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
 
 /*------------------------------------*\
     RESPONSIVE

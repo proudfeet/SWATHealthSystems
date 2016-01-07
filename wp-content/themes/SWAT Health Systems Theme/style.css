@@ -216,6 +216,18 @@ input:focus {
   border: 1px solid #04A4CC; }
 
 /*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+a {
+  transition: all 0.2s; }
+
+/*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
 /* wrapper */
@@ -226,25 +238,44 @@ input:focus {
   position: relative; }
 
 /* header */
+.header {
+  background: #000; }
+
 /* logo */
 /* nav */
+.nav ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: right; }
+.nav li {
+  display: inline-block;
+  list-style: none; }
+.nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 10px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px; }
+  .nav a:hover {
+    color: #cda633; }
+
 /* sidebar */
 /* footer */
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
+.homepage-hero {
+  padding-top: 40%; }
+
+.homepage-hero__top-banner {
+  background: url("./img/SWATgymInside.jpg");
+  background-size: cover; }
+
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
-/*------------------------------------*\
-	TYPOGRAPHY
-\*------------------------------------*/
-@font-face {
-  font-family: 'Font-Name';
-  src: url("fonts/font-name.eot");
-  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/

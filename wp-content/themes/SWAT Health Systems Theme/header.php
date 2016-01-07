@@ -25,14 +25,21 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
-
 			<!-- header -->
 			<header class="header clear" role="banner">
 
+				<!-- wrapper -->
+				<div class="wrapper">
+
+					<div class="menu-toggle columns tablet-down tablet-two">
+						<a href="#" class="menu-toggle__button--center" id="menu-toggle__button">
+							<span class="menu-toggle__text">Menu</span>
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+
 					<!-- logo -->
-					<div class="logo columns desk-four tablet-twelve">
+					<div class="logo columns desk-four tablet-eight">
 						<a href="<?php echo home_url(); ?>" title="<?php echo wp_title(''); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/SWATlogo.png" alt="SWAT Health Systems" class="logo-img">
@@ -40,11 +47,16 @@
 					</div>
 					<!-- /logo -->
 
+					<div class="tablet-down columns tablet-two spacer">&nbsp;</div>
+
 					<!-- nav -->
 					<nav class="nav columns desk-eight tablet-twelve" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
+
+				</div>
+				<!-- /wrapper -->
 
 			</header>
 			<!-- /header -->

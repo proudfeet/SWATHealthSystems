@@ -4,7 +4,7 @@
 
 		<div class="wrapper">
 			
-			<section class="columns desk-eight tablet-twelve">
+			<section class="columns desk-twelve">
 
 				<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
 
@@ -14,7 +14,6 @@
 
 			</section>
 
-			<?php get_sidebar(); ?>
 		</div>
 		<!-- section -->
 		

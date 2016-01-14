@@ -260,6 +260,15 @@ html {
 
 		.example__container {
 			padding-top: 150px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.example__video {
+			position: absolute;
+			bottom: -18px	;
+			left: 63px;
+			width: 153px;
 		}
 
 		.get-started__container {

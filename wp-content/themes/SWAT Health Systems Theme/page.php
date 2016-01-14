@@ -15,6 +15,9 @@
 						</a>
 					</div>	
 					<div class="columns desk-six example__container">
+						<video class="example__video" preload="auto" loop="" autoplay="">
+							<source type="video/mp4" src="http://www.trainerize.com/video/1-Training-plan-5May-1.mp4">
+						</video>
 						<img src="<?php echo bloginfo('template_directory'); ?>/img/trainerizeExample.png" alt="How Trainerize works">
 					</div>				
 				</div>

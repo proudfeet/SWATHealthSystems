@@ -318,7 +318,14 @@ html {
   background: url("./img/SWATgymInside.jpg");
   background-size: cover; }
   .homepage-hero__top-banner .example__container {
-    padding-top: 150px; }
+    padding-top: 150px;
+    position: relative;
+    overflow: hidden; }
+  .homepage-hero__top-banner .example__video {
+    position: absolute;
+    bottom: -18px;
+    left: 63px;
+    width: 153px; }
   .homepage-hero__top-banner .get-started__container {
     padding-top: 150px; }
 

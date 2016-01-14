@@ -79,9 +79,13 @@ $mobile: 480px;
 		&.tablet-down {
 			display: block;
 		}
+
+		&.tablet-hide {
+			display: none;
+		}
 		
 		&.tablet-one {
-				width: 8.333%;
+			width: 8.333%;
 		}
 
 		&.tablet-two {
@@ -134,6 +138,10 @@ $mobile: 480px;
 
 		&.mobile-down {
 			display: block;
+		}
+
+		&.mobile-hide {
+			display: none;
 		}
 		
 		&.mobile-one {

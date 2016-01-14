@@ -31,11 +31,19 @@
 				<!-- wrapper -->
 				<div class="wrapper">
 
+					<!-- ************* -->
+					<!-- NEW NAV -->
+					<!-- ************* -->
+
 					<div class="menu-toggle columns tablet-down tablet-two">
 						<a href="#" class="menu-toggle__button--center" id="menu-toggle__button">
 							<span class="menu-toggle__text">Menu</span>
 							<i class="fa fa-bars"></i>
 						</a>
+					</div>
+
+					<div class="columns spacer desk-four tablet-hide">
+						&nbsp;
 					</div>
 
 					<!-- logo -->
@@ -47,13 +55,17 @@
 					</div>
 					<!-- /logo -->
 
-					<div class="tablet-down columns tablet-two spacer">&nbsp;</div>
+					<div class="columns desk-four tablet-two spacer">&nbsp;</div>
 
 					<!-- nav -->
-					<nav class="nav columns desk-eight tablet-twelve" role="navigation">
+					<nav class="nav columns desk-twelve" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
+
+					<!-- ************ -->
+					<!-- END NEW NAV -->
+					<!-- ************ -->
 
 				</div>
 				<!-- /wrapper -->

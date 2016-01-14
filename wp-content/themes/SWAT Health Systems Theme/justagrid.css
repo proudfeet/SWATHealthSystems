@@ -44,6 +44,8 @@
   @media screen and (max-width: 767px) {
     .columns.tablet-down {
       display: block; }
+    .columns.tablet-hide {
+      display: none; }
     .columns.tablet-one {
       width: 8.333%; }
     .columns.tablet-two {
@@ -71,6 +73,8 @@
   @media screen and (max-width: 480px) {
     .columns.mobile-down {
       display: block; }
+    .columns.mobile-hide {
+      display: none; }
     .columns.mobile-one {
       width: 8.333%; }
     .columns.mobile-two {

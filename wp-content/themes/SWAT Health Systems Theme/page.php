@@ -52,6 +52,10 @@
 			<?php endif; ?>
 
 			<div class="homepage-hero homepage-hero__bottom-banner">
+				<video class="hero__video" preload="auto" loop="" autoplay="" poster="./img/SWATgymWeights.jpg">
+					<source type="video/webm" src="http://swathealth.wpengine.com/wp-content/uploads/2014/04/swat-webm.webm">
+					<source type="video/mp4" src="http://swathealth.wpengine.com/wp-content/uploads/2014/04/swat-high.mp4">
+				</video>
 				<div class="wrapper hero-content clear center">
 					<h1 class="hero__message center">What are you waiting for?</h1>
 					<a class="button button-yellow button-center" href="http://swathealth.trainerize.com/contact.aspx?ref=newuser">Get started today</a>
@@ -73,6 +77,14 @@
 
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<!-- featured image -->
+					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+						</a>
+					<?php endif; ?>
+					<!-- /featured image -->
 
 					<?php the_content(); ?>
 

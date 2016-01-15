@@ -10,7 +10,7 @@
 				<div class="wrapper hero-content clear">
 					<div class="columns desk-six get-started__container">
 						<h1 class="hero__message">Personalized training for you, wherever</h1>
-						<a href="http://swathealth.trainerize.com/contact.aspx?ref=newuser" class="hero__button button button-yellow">
+						<a href="<?php echo site_url('sign-up') ?>" class="hero__button button button-yellow">
 							Get started
 						</a>
 					</div>	
@@ -61,7 +61,7 @@
 				</video>
 				<div class="wrapper hero-content clear center">
 					<h1 class="hero__message center">What are you waiting for?</h1>
-					<a class="button button-yellow button-center" href="http://swathealth.trainerize.com/contact.aspx?ref=newuser">Get started today</a>
+					<a class="button button-yellow button-center" href="<?php echo site_url('sign-up'); ?>">Get started today</a>
 				</div>
 			</div>
 			
@@ -79,15 +79,21 @@
 
 					<!-- featured image -->
 					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-						</a>
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+						<div class="page__header-hero" style="background: url('<?php echo $image[0] ?>'); background-size: cover">
+							<div class="wrapper clear">
+								<h1 class="page__title"><?php the_title(); ?></h1>
+							</div>
+						</div>
+					<?php else: ?>
+						<h1 class="page__title wrapper"><?php the_title(); ?></h1>
 					<?php endif; ?>
 					<!-- /featured image -->
 
-					<?php the_content(); ?>
+					<div class="wrapper clear page__wrapper">					
+						<?php the_content(); ?>
+					</div>
 
-					<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 					<br class="clear">
 
@@ -110,15 +116,6 @@
 
 			<?php endif; ?>
 
-			<!-- section -->
-			<section class="wrapper clear">
-
-				<h1><?php the_title(); ?></h1>
-
-			
-
-			</section>
-			<!-- /section -->
 		</main>
 
 	<?php endif; ?>

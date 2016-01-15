@@ -382,22 +382,34 @@ html {
 .post__wrapper,
 .category__wrapper {
   padding: 50px 0 100px; }
-  .blog__wrapper .post__header,
-  .author__wrapper .post__header,
-  .post__wrapper .post__header,
-  .category__wrapper .post__header {
+  .blog__wrapper .post__header
+  .page__header,
+  .author__wrapper .post__header
+  .page__header,
+  .post__wrapper .post__header
+  .page__header,
+  .category__wrapper .post__header
+  .page__header {
     font-size: 36px;
     margin: 0;
     padding: 20px 0;
     letter-spacing: -1px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
-    .blog__wrapper .post__header .post__link:hover, .blog__wrapper .post__header .post__link:focus,
-    .author__wrapper .post__header .post__link:hover,
-    .author__wrapper .post__header .post__link:focus,
-    .post__wrapper .post__header .post__link:hover,
-    .post__wrapper .post__header .post__link:focus,
-    .category__wrapper .post__header .post__link:hover,
-    .category__wrapper .post__header .post__link:focus {
+    .blog__wrapper .post__header
+    .page__header .post__link:hover, .blog__wrapper .post__header
+    .page__header .post__link:focus,
+    .author__wrapper .post__header
+    .page__header .post__link:hover,
+    .author__wrapper .post__header
+    .page__header .post__link:focus,
+    .post__wrapper .post__header
+    .page__header .post__link:hover,
+    .post__wrapper .post__header
+    .page__header .post__link:focus,
+    .category__wrapper .post__header
+    .page__header .post__link:hover,
+    .category__wrapper .post__header
+    .page__header .post__link:focus {
       color: #cda633; }
   .blog__wrapper .post__details,
   .author__wrapper .post__details,
@@ -461,6 +473,31 @@ aside.sidebar {
   aside.sidebar h3 {
     font-size: 14px;
     letter-spacing: -1px; }
+
+.page__title {
+  font-size: 60px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+
+.page__header-hero .page__title {
+  color: white;
+  padding: 100px 0 200px; }
+
+.page__wrapper {
+  line-height: 2.5;
+  font-size: 16px;
+  padding: 50px 0 100px; }
+  .page__wrapper a {
+    color: #cda633; }
+    .page__wrapper a:hover, .page__wrapper a:focus {
+      color: #000; }
+
+.sign-up form {
+  text-align: center; }
+  .sign-up form table,
+  .sign-up form tbody,
+  .sign-up form tr,
+  .sign-up form td {
+    display: block; }
 
 /*------------------------------------*\
     IMAGES

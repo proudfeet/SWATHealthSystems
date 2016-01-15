@@ -345,7 +345,8 @@ html {
 	.category__wrapper {
 		padding: 50px 0 100px;
 
-		.post__header {
+		.post__header
+		.page__header {
 			font-size: 36px;
 			margin: 0;
 			padding: 20px 0;
@@ -456,6 +457,54 @@ html {
 		h3 {
 			font-size: 14px;
 			letter-spacing: -1px;
+		}
+	}
+
+	// ABOUT
+	// ------------------------ *
+
+	.page__title {
+		font-size: 60px;
+		text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.page__header-hero {
+
+		.page__title {
+			color: white;
+			padding: 100px 0 200px;
+		}
+	}
+
+	.page__wrapper {
+		line-height: 2.5;
+		font-size: 16px;
+		padding: 50px 0 100px;
+
+		a {
+			color: $yellow;
+
+			&:hover,
+			&:focus {
+				color: $black;
+			}
+		}
+	}
+
+	// SIGN UP
+	// ----------------------- *
+
+	.sign-up {
+
+		form {
+			text-align: center;
+			
+			table,
+			tbody,
+			tr,
+			td {
+				display: block;
+			}
 		}
 	}
 

@@ -71,10 +71,6 @@
 	<?php else: ?>
 
 		<main role="main">
-			<!-- section -->
-			<section class="wrapper clear">
-
-				<h1><?php the_title(); ?></h1>
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -113,6 +109,13 @@
 				<!-- /article -->
 
 			<?php endif; ?>
+
+			<!-- section -->
+			<section class="wrapper clear">
+
+				<h1><?php the_title(); ?></h1>
+
+			
 
 			</section>
 			<!-- /section -->

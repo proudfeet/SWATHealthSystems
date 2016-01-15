@@ -282,6 +282,7 @@ html {
 		font-weight: bold;
 		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+		border: none;	
 
 		&.button-yellow {
 			background: $yellow;
@@ -339,7 +340,9 @@ html {
 	}
 
 	.blog__wrapper,
-	.author__wrapper {
+	.author__wrapper,
+	.post__wrapper,
+	.category__wrapper {
 		padding: 50px 0 100px;
 
 		.post__header {
@@ -372,14 +375,59 @@ html {
 			}
 		}
 
-		.post__excerpt {
+		.post__content {
 			font-size: 16px;
+			line-height: 2.5;
+		}
+	}
 
-			.post__excerpt-link {
-				line-height: 2.5;
+	// POST
+	// -------------------------- *
+
+	.post__header-hero {
+		
+		.post__title {
+			color: white;
+			font-size: 60px;
+			text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+			padding: 100px 10px 150px;
+		}
+	}
+
+	.post__wrapper {
+
+		.comments {
+			width: 66.666%;
+
+			ul {
+				padding: 0;
+			}
+
+			.comment {
+				list-style: none;
+
+				.comment-body {
+					padding-bottom: 25px;
+				}
+
+				.children {
+					padding-left: 20px;
+				}
+			}
+		}
+
+		.comment-form-comment {
+
+			label {
+				font-size: 0;
+			}
+
+			textarea {
+				width: 100%;
 			}
 		}
 	}
+
 
 	
 

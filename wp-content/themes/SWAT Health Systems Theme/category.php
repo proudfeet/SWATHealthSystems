@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="wrapper category__wrapper">
 
 			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
 
@@ -13,7 +13,5 @@
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

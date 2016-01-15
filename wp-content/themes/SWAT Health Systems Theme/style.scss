@@ -176,11 +176,6 @@ html {
 }
 
 
-/* sidebar */
-.sidebar {
-
-}
-
 /* footer */
 .footer {
 	background: $black;
@@ -328,17 +323,77 @@ html {
 	// BLOG
 	// -------------------------------- *
 
-	.sidebar {
+	.blog__header-hero {
+		background: url('./img/SWATgymInside.jpg');
+		background-size: cover;
+		background-position-y: -48px;
+	}
+
+	.blog__header {
+		padding: 100px 10px 200px;
+		margin: 0;
 		color: $white;
-		background: black;
+		font-size: 100px;
+		text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+		letter-spacing: -1px;
+	}
+
+	.blog__wrapper,
+	.author__wrapper {
+		padding: 50px 0 100px;
+
+		.post__header {
+			font-size: 36px;
+			margin: 0;
+			padding: 20px 0;
+			letter-spacing: -1px;
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+			.post__link {
+
+				&:hover,
+				&:focus {
+					color: $yellow;
+				}
+			}
+		}
+
+		.post__details {
+			font-size: 13px;
+
+			a {
+				color: $yellow;
+				font-weight: bold;
+
+				&:hover,
+				&:focus {
+					color: $black;
+				}
+			}
+		}
+
+		.post__excerpt {
+			font-size: 16px;
+
+			.post__excerpt-link {
+				line-height: 2.5;
+			}
+		}
+	}
+
+	
+
+	aside.sidebar {
 		padding: 20px;
+		background: #eee;
+		border-radius: 3px;
 
 		a {
-			color: white;
+			color: $yellow;
 
 			&:hover,
 			&:focus {
-				color: $yellow;
+				color: $black;
 			}
 		}
 
@@ -348,6 +403,11 @@ html {
 
 		li {
 			list-style: none;
+		}
+
+		h3 {
+			font-size: 14px;
+			letter-spacing: -1px;
 		}
 	}
 

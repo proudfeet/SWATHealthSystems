@@ -269,7 +269,6 @@ html {
   .nav a:hover {
     color: #cda633; }
 
-/* sidebar */
 /* footer */
 .footer {
   background: #000;
@@ -364,18 +363,66 @@ html {
     margin: 0;
     padding-bottom: 20px; }
 
-.sidebar {
+.blog__header-hero {
+  background: url("./img/SWATgymInside.jpg");
+  background-size: cover;
+  background-position-y: -48px; }
+
+.blog__header {
+  padding: 100px 10px 200px;
+  margin: 0;
   color: #fff;
-  background: black;
-  padding: 20px; }
-  .sidebar a {
-    color: white; }
-    .sidebar a:hover, .sidebar a:focus {
+  font-size: 100px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: -1px; }
+
+.blog__wrapper,
+.author__wrapper {
+  padding: 50px 0 100px; }
+  .blog__wrapper .post__header,
+  .author__wrapper .post__header {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+    .blog__wrapper .post__header .post__link:hover, .blog__wrapper .post__header .post__link:focus,
+    .author__wrapper .post__header .post__link:hover,
+    .author__wrapper .post__header .post__link:focus {
       color: #cda633; }
-  .sidebar ul {
+  .blog__wrapper .post__details,
+  .author__wrapper .post__details {
+    font-size: 13px; }
+    .blog__wrapper .post__details a,
+    .author__wrapper .post__details a {
+      color: #cda633;
+      font-weight: bold; }
+      .blog__wrapper .post__details a:hover, .blog__wrapper .post__details a:focus,
+      .author__wrapper .post__details a:hover,
+      .author__wrapper .post__details a:focus {
+        color: #000; }
+  .blog__wrapper .post__excerpt,
+  .author__wrapper .post__excerpt {
+    font-size: 16px; }
+    .blog__wrapper .post__excerpt .post__excerpt-link,
+    .author__wrapper .post__excerpt .post__excerpt-link {
+      line-height: 2.5; }
+
+aside.sidebar {
+  padding: 20px;
+  background: #eee;
+  border-radius: 3px; }
+  aside.sidebar a {
+    color: #cda633; }
+    aside.sidebar a:hover, aside.sidebar a:focus {
+      color: #000; }
+  aside.sidebar ul {
     padding: 0; }
-  .sidebar li {
+  aside.sidebar li {
     list-style: none; }
+  aside.sidebar h3 {
+    font-size: 14px;
+    letter-spacing: -1px; }
 
 /*------------------------------------*\
     IMAGES

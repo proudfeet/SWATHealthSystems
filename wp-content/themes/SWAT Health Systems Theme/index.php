@@ -2,20 +2,43 @@
 
 	<main class="clear" role="main">
 
-		<div class="wrapper">
-			
-			<section class="columns desk-twelve">
+		<?php if(is_home()): ?>
 
-				<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+			<div class="blog__header-hero">
+				<div class="wrapper">
+					<h1 class="blog__header"><?php _e( 'Blog', 'html5blank' ); ?></h1>
+				</div>
+			</div>
 
-				<?php get_template_part('loop'); ?>
+			<div class="wrapper clear blog__wrapper">
+				<section class="columns desk-twelve">
+					<?php get_template_part('loop'); ?>
 
-				<?php get_template_part('pagination'); ?>
+					<?php get_template_part('pagination'); ?>
+				</section>
 
-			</section>
+			</div>
 
-		</div>
-		<!-- section -->
+		<?php else: ?>
+
+			<div class="wrapper">
+				
+				<section class="columns desk-eight">
+
+					<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+
+					<?php get_template_part('loop'); ?>
+
+					<?php get_template_part('pagination'); ?>
+
+				</section>
+
+				<?php get_sidebar(); ?>
+
+			</div>
+			<!-- section -->
+
+		<?php endif; ?>
 		
 		<!-- /section -->
 	</main>

@@ -21,12 +21,15 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'wpSWATHealthSystems');
+// define('DB_NAME', 'proudfoo_wpSWATHealthSystems'); - production
 
 /** MySQL database username */
 define('DB_USER', 'root');
+// define('DB_USER', 'proudfoot_swat'); - production
 
 /** MySQL database password */
 define('DB_PASSWORD', 'root');
+// define('DB_PASSWORD', '<>141LakeshoreRoad'); - production
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

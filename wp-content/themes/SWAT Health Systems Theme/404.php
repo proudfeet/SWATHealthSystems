@@ -2,13 +2,13 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="wrapper">
 
 			<!-- article -->
 			<article id="post-404">
 
-				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
+				<h1 class="center"><?php _e( "Sorry, there doesn't seem to be anything here", 'html5blank' ); ?></h1>
+				<h2 class="center">
 					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
 				</h2>
 
@@ -18,7 +18,5 @@
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

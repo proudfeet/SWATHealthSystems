@@ -10,29 +10,6 @@
 					</p>
 					<!-- /copyright -->
 
-					<ul class="columns desk-four social__container">
-						<li class="social__item">
-							<a class="social__link" href="http://www.twitter.com/SWAThealth" title="SWAT Health on Twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a class="social__link" href="http://www.facebook.com/SWAThealthPC" title="SWAT Health on Facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a class="social__link" href="https://www.youtube.com/channel/UCjGQeDKQrXyPl2RTu_LOzCA" title="SWAT Health on YouTube">
-								<i class="fa fa-youtube"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a class="social__link" href="http://www.instagram.com/swathealth" title="SWAT Health on Instagram">
-								<i class="fa fa-instagram"></i>
-							</a>
-						</li>
-					</ul>
-
 				</div>
 				<!-- /wrapper -->
 

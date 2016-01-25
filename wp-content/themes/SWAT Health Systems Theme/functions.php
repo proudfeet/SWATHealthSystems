@@ -136,6 +136,10 @@ function html5blank_styles()
     // Google Fonts - Montserrat    
     wp_register_style('opensans', "https://fonts.googleapis.com/css?family=Open+Sans:400");
     wp_enqueue_style('opensans'); // Enqueue it!
+
+    // Google Fonts - Montserrat    
+    wp_register_style('librebaskerville', "https://fonts.googleapis.com/css?family=Libre+Baskerville");
+    wp_enqueue_style('librebaskerville'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

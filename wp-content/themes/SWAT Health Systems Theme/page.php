@@ -29,10 +29,8 @@
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<div class="wrapper article__content">
+					<div class="wrapper article__content content">
 						<?php the_content(); ?>
-
-						<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 						<br class="clear">
 					</div>

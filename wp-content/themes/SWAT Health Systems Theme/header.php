@@ -35,8 +35,8 @@
 					<!-- NEW NAV -->
 					<!-- ************* -->
 
-					<div class="menu-toggle columns tablet-down tablet-two">
-						<a href="#" class="menu-toggle__button--center" id="menu-toggle__button">
+					<div class="menu-toggle columns tablet-down tablet-three center">
+						<a href="#" class="menu-toggle__button" id="menu-toggle__button">
 							<span class="menu-toggle__text">Menu</span>
 							<i class="fa fa-bars"></i>
 						</a>
@@ -47,18 +47,41 @@
 					</div>
 
 					<!-- logo -->
-					<div class="logo columns desk-four tablet-eight">
+					<div class="logo columns desk-four tablet-six">
 						<a href="<?php echo home_url(); ?>" title="<?php echo wp_title(''); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/SWATlogo.png" alt="SWAT Health Systems" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/SWATLogo.png" alt="SWAT Health Systems" class="logo-img">
 						</a>
 					</div>
 					<!-- /logo -->
 
-					<div class="columns desk-four tablet-two spacer">&nbsp;</div>
+					<div class="columns desk-four tablet-three spacer">
+						<ul class="social__container">
+							<li class="social__item">
+								<a class="social__link" href="http://www.twitter.com/SWAThealth" title="SWAT Health on Twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="http://www.facebook.com/SWAThealthPC" title="SWAT Health on Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="https://www.youtube.com/channel/UCjGQeDKQrXyPl2RTu_LOzCA" title="SWAT Health on YouTube">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="http://www.instagram.com/swathealth" title="SWAT Health on Instagram">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 
 					<!-- nav -->
-					<nav class="nav columns desk-twelve" role="navigation">
+					<nav class="nav columns desk-twelve tablet-nav-offscreen" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
@@ -72,3 +95,15 @@
 
 			</header>
 			<!-- /header -->
+
+			<script>
+
+			jQuery(document).ready(function(){
+
+				jQuery("#menu-toggle__button").click(function(ev){
+					ev.preventDefault();
+					jQuery(".nav").toggleClass("tablet-nav-offscreen");
+				});
+			});
+
+			</script>

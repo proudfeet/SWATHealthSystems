@@ -8,13 +8,13 @@
 			<!-- homepage top banner -->
 			<div class="homepage-hero homepage-hero__top-banner">
 				<div class="wrapper hero-content clear">
-					<div class="columns desk-six get-started__container">
+					<div class="columns desk-six tablet-twelve get-started__container">
 						<h1 class="hero__message">Personalized training for you, wherever</h1>
 						<a href="<?php echo site_url('sign-up') ?>" class="hero__button button button-yellow">
 							Get started
 						</a>
 					</div>	
-					<div class="columns desk-six example__container">
+					<div class="columns desk-six example__container tablet-hide">
 						<video class="example__video" preload="auto" loop="" autoplay="">
 							<source type="video/mp4" src="http://www.trainerize.com/video/1-Training-plan-5May-1.mp4">
 						</video>
@@ -29,7 +29,7 @@
 				<!-- article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<div class="wrapper article__content content">
+					<div class="wrapper article__content">
 						<?php the_content(); ?>
 
 						<br class="clear">

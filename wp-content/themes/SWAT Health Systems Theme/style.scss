@@ -34,10 +34,18 @@ $mobile: 480px;
 html {
 	font-size:62.5%;
 }
+
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
+	padding-top: 180px;
+
+	@media screen and (max-width: $tablet) {
+		padding-top: 27.5%;
+		overflow-x: hidden;
+	}
 }
+
 /* clear */
 .clear:before,
 .clear:after {
@@ -133,9 +141,6 @@ html {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
 	position:relative;
 }
 
@@ -151,6 +156,13 @@ html {
 /* header */
 .header {
 	background: $black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);
+	max-height: 227px;
 
 	.social__container {
 		margin: 0;
@@ -168,7 +180,7 @@ html {
 				display: inline-block;
 				font-size: 20px;
 				color: $grey;
-				padding: 10px;
+				padding: 5px 4px;
 
 				&:hover,
 				&:focus {
@@ -191,6 +203,10 @@ html {
 	.menu-toggle__button {
 		display: inline-block;
 		padding: 15px;
+
+		@media screen and (max-width: $mobile) {
+			padding: 7px 15px;
+		}
 	}
 
 	.menu-toggle__text {
@@ -210,16 +226,24 @@ html {
 .nav {
 
 	@media screen and (max-width: $tablet) {
+		width: 106% !important;
 		position: absolute;
 		top: 65px;
+		left: -3%;
 		background: black;
 		transition: all 0.2s;
+		z-index: 100;
+		margin-top: 19%;
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin-top: 14%;
 	}
 
 		&.tablet-nav-offscreen {
 
 			@media screen and (max-width: $tablet) {
-				left: -999999%;
+				left: -199%;
 			}
 		}
 
@@ -242,7 +266,7 @@ html {
 	a {
 		display: inline-block;
 		color: $white;
-		padding: 15px 10px;
+		padding: 15px 7px;
 		font-family: $montserrat;
 		font-weight: bold;
 		font-size: 15px;
@@ -313,6 +337,10 @@ html {
 		background: url('./img/SWATgymInside.jpg');
 		background-size: cover;
 
+		@media screen and (max-width: $mobile) {
+			text-align: center;
+		}
+
 		.example__container {
 			padding-top: 150px;
 			position: relative;
@@ -322,12 +350,22 @@ html {
 		.example__video {
 			position: absolute;
 			bottom: -18px	;
-			left: 63px;
-			width: 153px;
+			left: 13.2%;
+			width: 32%;
 		}
 
 		.get-started__container {
 			padding-top: 150px;
+
+			@media screen and (max-width: $tablet) {
+				padding-top: 75px;
+				padding-bottom: 150px;
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 50px;
+				padding-bottom: 100px;
+			}
 		}
 	}
 
@@ -353,6 +391,12 @@ html {
 		position: relative;
 		padding: 200px;
 
+		@media screen and (max-width: $tablet) {
+			padding: 110px 10px 155px;
+			background: url('./img/SWATgymWeights.jpg');
+			background-size: cover;
+		}
+
 		.hero__video {
 			position: absolute;
 			top: 0;
@@ -360,13 +404,27 @@ html {
 			width: 100%;
 			height: 100%;
 			object-fit: inherit;
+
+			@media screen and (max-width: $tablet) {
+				display: none;
+			}
 		}
 	}
 
 	.home {
 		
 		.article__content {
-			padding: 100px 10px;
+			padding: 50px 10px;
+			margin: 100px auto;
+			border-top: 5px solid rgba($yellow, 0.3);
+			border-bottom: 5px solid rgba($yellow, 0.3);
+			text-shadow: 1px 1px 0px rgba($yellow, 0.5);
+
+			@media screen and (max-width: $mobile) {
+				padding: 20px 10px;
+				margin: 50px auto;
+				text-align: center;
+			}
 
 			a {
 				color: $yellow;
@@ -377,6 +435,10 @@ html {
 				line-height: 1.5;
 				margin: 0;
 				padding: 10px;
+
+				@media screen and (max-width: $mobile) {
+					font-size: 18px;
+				}
 			}
 		}
 	}
@@ -636,6 +698,34 @@ html {
 
 	// SIGN UP
 	// ----------------------- *
+
+	.plan__header {
+		text-align: center;
+	}
+
+	.feature__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		.feature__item {
+			text-align: center;
+			color: $black;
+			min-height: 40px;
+
+			.fa-check {
+				color: green;
+			}
+
+			&:nth-child(2n+1) {
+				background: lighten($grey, 40);
+			}
+
+			&:nth-child(2n) {
+				background: lighten($grey, 30);
+			}
+		}
 
 	.sign-up {
 

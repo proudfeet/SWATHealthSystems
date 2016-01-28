@@ -35,19 +35,10 @@
 					<!-- NEW NAV -->
 					<!-- ************* -->
 
-					<div class="menu-toggle columns tablet-down tablet-three center">
-						<a href="#" class="menu-toggle__button" id="menu-toggle__button">
-							<span class="menu-toggle__text">Menu</span>
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
-
-					<div class="columns spacer desk-four tablet-hide">
-						&nbsp;
-					</div>
+					
 
 					<!-- logo -->
-					<div class="logo columns desk-four tablet-six">
+					<div class="logo columns desk-twelve">
 						<a href="<?php echo home_url(); ?>" title="<?php echo wp_title(''); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/SWATLogo.png" alt="SWAT Health Systems" class="logo-img">
@@ -55,7 +46,28 @@
 					</div>
 					<!-- /logo -->
 
-					<div class="columns desk-four tablet-three spacer">
+					<div class="menu-toggle columns tablet-down tablet-three center">
+						<a href="#" class="menu-toggle__button" id="menu-toggle__button">
+							<span class="menu-toggle__text">Menu</span>
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+
+					<div class="columns desk-two spacer tablet-hide">
+						&nbsp;
+					</div>					
+
+					<!-- nav -->
+					<nav class="nav columns desk-eight tablet-nav-offscreen" role="navigation">
+						<?php html5blank_nav(); ?>
+					</nav>
+					<!-- /nav -->
+
+					<!-- ************ -->
+					<!-- END NEW NAV -->
+					<!-- ************ -->
+
+					<div class="columns desk-two tablet-nine spacer">
 						<ul class="social__container">
 							<li class="social__item">
 								<a class="social__link" href="http://www.twitter.com/SWAThealth" title="SWAT Health on Twitter">
@@ -79,16 +91,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- nav -->
-					<nav class="nav columns desk-twelve tablet-nav-offscreen" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-					<!-- ************ -->
-					<!-- END NEW NAV -->
-					<!-- ************ -->
 
 				</div>
 				<!-- /wrapper -->

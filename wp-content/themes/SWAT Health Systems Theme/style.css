@@ -174,7 +174,12 @@ html {
 
 body {
   font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #444; }
+  color: #444;
+  padding-top: 180px; }
+  @media screen and (max-width: 767px) {
+    body {
+      padding-top: 27.5%;
+      overflow-x: hidden; } }
 
 /* clear */
 .clear:before,
@@ -240,9 +245,6 @@ html {
 
 /* wrapper */
 .wrapper {
-  max-width: 1280px;
-  width: 95%;
-  margin: 0 auto;
   position: relative; }
 
 .content {
@@ -253,7 +255,14 @@ html {
 
 /* header */
 .header {
-  background: #000; }
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);
+  max-height: 227px; }
   .header .social__container {
     margin: 0;
     padding: 0;
@@ -266,7 +275,7 @@ html {
     display: inline-block;
     font-size: 20px;
     color: #8a8a88;
-    padding: 10px; }
+    padding: 5px 4px; }
     .header .social__link:hover, .header .social__link:focus {
       color: #fff; }
 
@@ -274,6 +283,9 @@ html {
 .menu-toggle .menu-toggle__button {
   display: inline-block;
   padding: 15px; }
+  @media screen and (max-width: 480px) {
+    .menu-toggle .menu-toggle__button {
+      padding: 7px 15px; } }
 .menu-toggle .menu-toggle__text {
   display: block;
   font-size: 9px;
@@ -286,13 +298,20 @@ html {
 /* nav */
 @media screen and (max-width: 767px) {
   .nav {
+    width: 106% !important;
     position: absolute;
     top: 65px;
+    left: -3%;
     background: black;
-    transition: all 0.2s; } }
+    transition: all 0.2s;
+    z-index: 100;
+    margin-top: 19%; } }
+@media screen and (max-width: 480px) {
+  .nav {
+    margin-top: 14%; } }
 @media screen and (max-width: 767px) {
   .nav.tablet-nav-offscreen {
-    left: -999999%; } }
+    left: -199%; } }
 .nav ul {
   margin: 0;
   padding: 0;
@@ -307,7 +326,7 @@ html {
 .nav a {
   display: inline-block;
   color: #fff;
-  padding: 15px 10px;
+  padding: 15px 7px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 15px; }
@@ -350,6 +369,9 @@ html {
 .homepage-hero__top-banner {
   background: url("./img/SWATgymInside.jpg");
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    .homepage-hero__top-banner {
+      text-align: center; } }
   .homepage-hero__top-banner .example__container {
     padding-top: 150px;
     position: relative;
@@ -357,10 +379,18 @@ html {
   .homepage-hero__top-banner .example__video {
     position: absolute;
     bottom: -18px;
-    left: 63px;
-    width: 153px; }
+    left: 13.2%;
+    width: 32%; }
   .homepage-hero__top-banner .get-started__container {
     padding-top: 150px; }
+    @media screen and (max-width: 767px) {
+      .homepage-hero__top-banner .get-started__container {
+        padding-top: 75px;
+        padding-bottom: 150px; } }
+    @media screen and (max-width: 480px) {
+      .homepage-hero__top-banner .get-started__container {
+        padding-top: 50px;
+        padding-bottom: 100px; } }
 
 .button {
   display: inline-block;
@@ -380,6 +410,11 @@ html {
 .homepage-hero__bottom-banner {
   position: relative;
   padding: 200px; }
+  @media screen and (max-width: 767px) {
+    .homepage-hero__bottom-banner {
+      padding: 110px 10px 155px;
+      background: url("./img/SWATgymWeights.jpg");
+      background-size: cover; } }
   .homepage-hero__bottom-banner .hero__video {
     position: absolute;
     top: 0;
@@ -387,9 +422,21 @@ html {
     width: 100%;
     height: 100%;
     object-fit: inherit; }
+    @media screen and (max-width: 767px) {
+      .homepage-hero__bottom-banner .hero__video {
+        display: none; } }
 
 .home .article__content {
-  padding: 100px 10px; }
+  padding: 50px 10px;
+  margin: 100px auto;
+  border-top: 5px solid rgba(205, 166, 51, 0.3);
+  border-bottom: 5px solid rgba(205, 166, 51, 0.3);
+  text-shadow: 1px 1px 0px rgba(205, 166, 51, 0.5); }
+  @media screen and (max-width: 480px) {
+    .home .article__content {
+      padding: 20px 10px;
+      margin: 50px auto;
+      text-align: center; } }
   .home .article__content a {
     color: #cda633; }
   .home .article__content p {
@@ -397,6 +444,9 @@ html {
     line-height: 1.5;
     margin: 0;
     padding: 10px; }
+    @media screen and (max-width: 480px) {
+      .home .article__content p {
+        font-size: 18px; } }
 
 .blog__header-hero {
   background: url("./img/SWATgymInside.jpg");
@@ -588,6 +638,25 @@ aside.sidebar {
     color: #cda633; }
     .page__wrapper a:hover, .page__wrapper a:focus {
       color: #000; }
+
+.plan__header {
+  text-align: center; }
+
+.feature__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.feature__item {
+  text-align: center;
+  color: #000;
+  min-height: 40px; }
+  .feature__item .fa-check {
+    color: green; }
+  .feature__item:nth-child(2n+1) {
+    background: #efefef; }
+  .feature__item:nth-child(2n) {
+    background: #d6d6d5; }
 
 .sign-up form {
   text-align: center; }

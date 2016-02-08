@@ -6,7 +6,7 @@
 
 			<div class="blog__header-hero">
 				<div class="wrapper">
-					<h1 class="blog__header"><?php _e( 'Blog', 'html5blank' ); ?></h1>
+					<h1 class="blog__header off-page"><?php _e( 'Blog', 'html5blank' ); ?></h1>
 				</div>
 			</div>
 

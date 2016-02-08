@@ -88,8 +88,13 @@ input:focus {
 
 $white: #fff;
 $grey: #8a8a88;
+$lightGrey: #DADADA;
 $black: #000;
 $yellow: #cda633;
+$lightYellow: #ffcc00;
+$red: #B82023;
+$blue: #1497CC;
+$green: #0ACC41;
 
 /*------------------------------------*\
 	TYPOGRAPHY
@@ -276,7 +281,8 @@ html {
 			padding: 10px 0;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $yellow;
 		}
 	}
@@ -294,7 +300,7 @@ html {
 	.copyright {
 		margin: 0;
 		color: $grey;
-		padding: 15px 0;
+		padding: 15px 10px;
 		font-size: 12px;
 	}
 
@@ -446,19 +452,24 @@ html {
 	// BLOG
 	// -------------------------------- *
 
-	.blog__header-hero {
-		background: url('./img/SWATgymInside.jpg');
-		background-size: cover;
-		background-position-y: -48px;
-	}
-
 	.blog__header {
-		padding: 100px 10px 200px;
+		padding-top: 50px;
 		margin: 0;
-		color: $white;
+		color: #444;
 		font-size: 60px;
 		text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 		letter-spacing: -1px;
+	}
+
+	.blog__wrapper {
+
+		article {
+			margin-top: 50px;
+		}
+	}
+
+	.featured-image__preview {
+		text-align: center;
 	}
 
 	.blog__wrapper,
@@ -467,6 +478,10 @@ html {
 	.category__wrapper {
 		padding: 50px 10px 100px;
 
+		@media screen and (max-width: $tablet) {
+			padding: 0 10px 100px;
+		}
+
 		.post__header
 		.page__header {
 			font-size: 36px;
@@ -474,6 +489,8 @@ html {
 			padding: 20px 0;
 			letter-spacing: -1px;
 			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+
 
 			.post__link {
 
@@ -503,11 +520,10 @@ html {
 			font-size: 16px;
 			line-height: 2.5;
 			text-shadow: 1px 1px 0 rgba($yellow, 0.5);
-		}
 
-		img {
-			display: block;
-			margin: 0 auto;
+			@media screen and (max-width: $mobile) {
+				line-height: 2;
+			}
 		}
 	}
 
@@ -518,6 +534,15 @@ html {
 			margin: 0;
 			padding: 5px 0;
 			text-shadow: 2px 2px 0 rgba($yellow, 0.4);
+
+			@media screen and (max-width: $tablet) {
+				font-size: 30px;
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 24px;
+				text-align: center;
+			}
 		}
 	}
 
@@ -531,6 +556,15 @@ html {
 			font-size: 60px;
 			text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 			padding: 100px 10px 150px;
+
+			@media screen and (max-width: $tablet) {
+				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 36px;
+				padding: 50px 10px 75px;
+			}
 		}
 	}
 
@@ -637,14 +671,19 @@ html {
 			}
 
 		.post__content {
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 2;
-			max-width: 600px;
-			margin: 0 auto;
-			padding: 0 10px;
+			max-width: 640px;
+			margin: 20px auto 0;
+			padding: 5px 15px;
 			text-shadow: 0 0 3px black, 1px 1px 0px rgba(0, 0, 0, 0.3), 1px -1px 0px rgba(0, 0, 0, 0.3), -1px -1px 0px rgba(0, 0, 0, 0.3), -1px 1px 0px rgba(0, 0, 0, 0.3);
 			letter-spacing: 1px;
 			position: relative;
+			background: rgba(0, 0, 0, 0.3);
+
+			@media screen and (max-width: $mobile) {
+				font-size: 14px;
+			}
 
 			&::after {
 				content: "";
@@ -667,6 +706,102 @@ html {
 	// ABOUT
 	// ------------------------ *
 
+	.about-us__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		.off-page {
+			font-size: 0;
+			
+			@media screen and (max-width: $tablet) {
+				position: relative;
+				left: 0;
+				font-size: 16px;
+			}
+		}
+
+		strong {
+			display: block;
+			text-align: center;
+		}
+	}
+
+		.about-us__section {
+			position: relative;
+			width: 50%;
+			padding: 0 20px;
+
+			&:first-of-type,
+			&:nth-of-type(2) {
+				border-bottom: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-bottom: none;
+				}
+			}
+
+			&:first-of-type {
+				border-right: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-right: none;
+				}
+			}
+
+			&:nth-of-type(2) {
+				border-left: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-left: none;
+				}
+			}
+
+			&:nth-of-type(3),
+			&:nth-of-type(4) {
+				border-top: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-top: none;
+				}
+			}
+
+			&:nth-of-type(3) {
+				border-right: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-right: none;
+				}
+			}
+
+			&:nth-of-type(4) {
+				border-left: 2px solid rgba($yellow, 0.6);
+
+				@media screen and (max-width: $tablet) {
+					border-left: none;
+				}
+			}
+
+			@media screen and (max-width: $tablet) {
+				width: 100%;
+				border: none;
+				padding: 0 10px;
+			}
+		}
+
+		.about-us__subheader {
+			padding: 50px 0;
+			font-size: 36px;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+			@media screen and (max-width: $tablet) {
+				padding: 30px 0;
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding: 10px 0;
+			}
+		}
+
 	.page__title {
 		font-size: 60px;
 		text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -677,6 +812,15 @@ html {
 		.page__title {
 			color: white;
 			padding: 100px 10px 200px;
+
+			@media screen and (max-width: $tablet) {
+				padding: 50px 10px 100px;
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding: 25px 10px 50px;
+				text-align: center;
+			}
 		}
 	}
 
@@ -696,50 +840,164 @@ html {
 		}
 	}
 
+	.column__wrapper:nth-of-type(2) {
+		// border-top: 5px solid rgba($yellow, 0.5);
+
+		@media screen and (max-width: $tablet) {
+			border-top: none;
+		}
+	}
+
+	.column__wrapper {
+
+		.columns:nth-of-type(2) {
+			// border-left: 5px solid rgba($yellow, 0.5);
+
+			@media screen and (max-width: $tablet) {
+				border-left: none;
+			}
+		}
+	}
+
 	// SIGN UP
 	// ----------------------- *
+	
+	.feature__wrapper {
+		padding: 0 1px;
+
+		.plan__header {
+			background: $black;
+			color: black;
+			margin: 0;
+		}
+
+		&:first-of-type {
+			
+			.plan__header {
+				color: white;
+
+				@media screen and (max-width: $tablet) {
+					height: auto;
+				}
+			}
+
+			.feature__list {
+
+				@media screen and (max-width: $tablet) {
+					display: none;
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			
+			.plan__header {
+				background: $lightGrey;
+			}
+		}
+
+		&:nth-of-type(3) {
+			
+			.plan__header {
+				background: $lightYellow;
+			}
+		}
+
+		&:nth-of-type(4) {
+			
+			.plan__header {
+				background: rgba(237,232,237,1);
+				background: -moz-linear-gradient(top, rgba(237,232,237,1) 0%, rgba(246,246,246,1) 47%, rgba(194,194,194,1) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,232,237,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(194,194,194,1)));
+				background: -webkit-linear-gradient(top, rgba(237,232,237,1) 0%, rgba(246,246,246,1) 47%, rgba(194,194,194,1) 100%);
+				background: -o-linear-gradient(top, rgba(237,232,237,1) 0%, rgba(246,246,246,1) 47%, rgba(194,194,194,1) 100%);
+				background: -ms-linear-gradient(top, rgba(237,232,237,1) 0%, rgba(246,246,246,1) 47%, rgba(194,194,194,1) 100%);
+				background: linear-gradient(to bottom, rgba(237,232,237,1) 0%, rgba(246,246,246,1) 47%, rgba(194,194,194,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede8ed', endColorstr='#c2c2c2', GradientType=0 );
+			}
+		}
+
+		.feature__item:last-of-type{
+			background: black;
+			color: white;
+			font-weight: bold;
+			min-height: 141px;
+
+			p {
+				margin: 0;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			br {
+				display: none;
+			}
+
+				select {
+					width: 100%;
+					max-width: calc(100% - 20px);
+				}
+		}
+	}
 
 	.plan__header {
 		text-align: center;
+		font-size: 18px;
+		height: 125px;
+		line-height: 1;
+		padding: 15px 10px;
+
+		@media screen and (max-width: $tablet) {
+			height: 150px;
+		}
+
+		@media screen and (max-width: $mobile) {
+			height: auto;
+			font-size: 24px;
+		}
 	}
 
 	.feature__list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
+
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 50px;
+		}
 	}
 
 		.feature__item {
 			text-align: center;
 			color: $black;
-			min-height: 40px;
+
+			&:not(:last-of-type) {
+				border-bottom: 2px solid white;
+			}
 
 			.fa-check {
-				color: green;
+				color: $blue;
 			}
 
 			&:nth-child(2n+1) {
-				background: lighten($grey, 40);
+				background: #D4D4D4;
 			}
 
 			&:nth-child(2n) {
-				background: lighten($grey, 30);
+				background: #F2F2F2;
+			}
+
+			p {
+				margin: 0;
+
+				&.feature {
+					line-height: 1;
+					padding-top: 10px;
+				}
 			}
 		}
-
-	.sign-up {
-
-		form {
-			text-align: center;
-			
-			table,
-			tbody,
-			tr,
-			td {
-				display: block;
-			}
-		}
-	}
 
 
 

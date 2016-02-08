@@ -10,7 +10,7 @@
 
 			<!-- wrapper -->
 			<div class="wrapper">
-				
+
 				<!-- post title -->
 				<h2 class="post__header center">
 					<span class="post__title"><?php the_title(); ?></span>
@@ -35,11 +35,22 @@
 	<?php else: ?>
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
+			<!-- if featured image -->
+			<?php if(has_post_thumbnail()): ?>
+				<div class="featured-image__preview">
+					<a href="<?php the_permalink(); ?>" class="post__link" title="<?php the_title(); ?>">
+						<?php the_post_thumbnail(); ?>
+					</a>
+				</div>
+			<?php endif; ?>
+			<!-- close featured image -->
 
 			<!-- post title -->
-			<h2 class="post__header">
-				<a class="post__link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h2>
+			<a class="post__link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<h2 class="post__header"><?php the_title(); ?></h2>
+			</a>
+			
 			<!-- /post title -->
 
 			<!-- post details -->

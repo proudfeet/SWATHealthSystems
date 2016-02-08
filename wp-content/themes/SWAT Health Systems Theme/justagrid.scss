@@ -3,10 +3,18 @@ $mobile: 480px;
 
 .tablet-down {
 	display: none;
+
+	@media screen and (max-width: $tablet) {
+		display: block;
+	}
 }
 
 .mobile-down {
 	display: none;
+
+	@media screen and (max-width: $mobile) {
+		display: block;
+	}
 }
 
 .wrapper {

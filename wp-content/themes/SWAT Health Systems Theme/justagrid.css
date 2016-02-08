@@ -1,8 +1,14 @@
 .tablet-down {
   display: none; }
+  @media screen and (max-width: 767px) {
+    .tablet-down {
+      display: block; } }
 
 .mobile-down {
   display: none; }
+  @media screen and (max-width: 480px) {
+    .mobile-down {
+      display: block; } }
 
 .wrapper {
   width: 99%;

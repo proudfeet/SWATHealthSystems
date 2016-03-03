@@ -53,7 +53,7 @@
 			<?php endif; ?>
 
 			<div class="homepage-hero homepage-hero__bottom-banner">
-				<video class="hero__video" preload="auto" loop="" autoplay="" poster="./img/SWATgymWeights.jpg">
+				<video class="hero__video" preload="auto" loop="" autoplay="" poster="<?php get_template_directory_uri ('img/SWATgymweights.jpg') ?>">
 					<source type="video/webm" src="http://swathealth.wpengine.com/wp-content/uploads/2014/04/swat-webm.webm">
 					<source type="video/mp4" src="http://swathealth.wpengine.com/wp-content/uploads/2014/04/swat-high.mp4">
 				</video>

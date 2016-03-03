@@ -5,7 +5,6 @@
 		'use strict';
 		
 		// DOM ready, take it away
-		console.log("heyo");
 		jQuery("#menu-toggle__button").click(function(ev){
 			ev.preventDefault();
 			jQuery(".nav").toggleClass("tablet-nav-offscreen");

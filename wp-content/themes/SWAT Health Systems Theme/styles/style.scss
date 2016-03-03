@@ -141,7 +141,7 @@ html {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background: url('./img/white_wall_hash.png');
+	background: url('../img/white_wall_hash.png');
 }
 
 /* wrapper */
@@ -340,7 +340,7 @@ html {
 	}
 
 	.homepage-hero__top-banner {
-		background: url('./img/SWATgymInside.jpg');
+		background: url('../img/SWATgymInside.jpg');
 		background-size: cover;
 
 		@media screen and (max-width: $mobile) {
@@ -399,7 +399,7 @@ html {
 
 		@media screen and (max-width: $tablet) {
 			padding: 110px 10px 155px;
-			background: url('./img/SWATgymWeights.jpg');
+			background: url('../img/SWATgymWeights.jpg');
 			background-size: cover;
 		}
 
@@ -708,7 +708,9 @@ html {
 
 	.about-us__wrapper {
 		display: flex;
+		display: -ms-flex;
 		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
 
 		.off-page {
 			font-size: 0;
